@@ -1,0 +1,59 @@
+/*  Remove default margin  */
+body {
+    margin: 0;
+}
+
+/* Wrap text in list. Remove markers */
+ul {
+    list-style-type:none;
+    overflow-wrap: break-word;
+    white-space: normal;
+    /* Move flex-items to bottom */
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+li {
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Login  */
+#container {
+    display: grid;
+    background-color: rgb(185, 185, 16);
+    margin: none;
+    border: none;
+    padding: none;
+    height: 100vh;
+    width: 100vh;
+}
+
+/* Game */
+#game-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+#game-board {
+    background: orange;
+}
+
+#chat-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#chat-header {
+    background-color: red;
+}
+
+#message-field {
+   background-color: turquoise;
+}
+
+#chat-field {
+    background-color: yellow;
+}
